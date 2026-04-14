@@ -1,4 +1,4 @@
-'''Faz um programa que:
+'''Faça um programa que:
 
 Pede um CEP - ok
 
@@ -13,12 +13,16 @@ Mostra tudo organizado
 '''
 import requests
 import json
+
+# TRATAMENTO DE ERRO PARA O INPUT DO CEP
+
 while 1:
     local = input('Insira seu cep: ')
     if len(local) == 8:
         break
 
 
+#CONSUMO DA API PARA O ENDEREÇO
 
 url = f"https://cep.awesomeapi.com.br/json/{local}"
 

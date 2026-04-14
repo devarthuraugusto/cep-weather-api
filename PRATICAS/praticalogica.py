@@ -1,6 +1,11 @@
-loop = int(input(""))
-for numero in range(loop +1):
-    if numero % 2 == 0:
-        if numero == 0:
-            continue
-        print(f"{numero}^2 = {numero * numero}")
+matriz = []
+
+templista = [1, 2 , 3]
+
+templista2 = [4, 5, 6]
+
+matriz.append(templista)
+matriz.append(templista2)
+
+for item in matriz:
+    print(item)

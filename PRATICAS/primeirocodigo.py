@@ -1,13 +1,15 @@
-while True:
-    cpf = input("Digite seu CPF: ")
 
-    # tratando o cpf
-    cpf = cpf.strip()
-    cpf = cpf.replace(".", "")
-    cpf = cpf.replace("-", "")
+while 1:
+    x = int(input(""))
+    
+    lista = []
 
-    if cpf.isdigit() and len(cpf) == 11:
-        print(f'Obrigado, seu cpf: {cpf}!')
+    if x ==0:
         break
-    else:
-        print('CPF inválido. Tente novamente.')
+
+    for i in range(1, x + 1):
+        lista.append(i)
+
+    print(lista)
+
+
