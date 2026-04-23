@@ -1,20 +1,12 @@
-matriz = []
+def lenpalavra(palavra):
+    contador = 0
+    for letra in palavra:
+        contador +=1
+
+    print(contador)
 
 
-for i in range(3):
-    temp = []
-    for i in range(3):
-        numero = int(input(''))
-        temp.append(numero)
-    matriz.append(temp)
+fodase = 'rvbwbvujafvenoiranvoikbedbhwhyeieawb'
 
-for item in matriz:
-    print(item)
+lenpalavra(fodase)
 
-
-
-
-'''for item in matriz:
-    for numero in item:
-        print(numero, end="")
-    print('')'''

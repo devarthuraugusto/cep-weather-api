@@ -1,15 +1,21 @@
+'''n = int(input(''))
 
-while 1:
-    x = int(input(""))
-    
-    lista = []
+soma = 0
 
-    if x ==0:
-        break
+for i in range(1, n+1):
+    if n % i == 0:
+        soma += i
+    print(i)
 
-    for i in range(1, x + 1):
-        lista.append(i)
-
-    print(lista)
+print(soma)'''
 
 
+n = int(input(''))
+
+soma = n
+
+for i in range(1, (n//2) +1):
+    if n % i == 0:
+        soma += i
+
+print(soma)
